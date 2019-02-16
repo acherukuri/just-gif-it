@@ -26,7 +26,7 @@ public class UploadController {
     private final static Logger log = LoggerFactory.getLogger(MethodHandles.lookup()
             .lookupClass());
 
-    @Value("${multipart.location}")
+    @Value("${multipart.location}") // properties in application.properties can be accessed in the application like this
     private String location;
 
     @Inject
